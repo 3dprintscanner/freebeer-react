@@ -4,6 +4,8 @@ import './App.css';
 import MainMap from './components/map'
 import MenuBar from './components/menubar'
 import Footer from './components/footer'
+import SearchForm from './components/searchform'
+
 import { slide as Menu } from 'react-burger-menu'
 
 class App extends Component {
@@ -17,6 +19,7 @@ class App extends Component {
           <MenuBar/>
           <header className="App-header">
             <h1 className="App-title">Free Beer</h1>
+            <SearchForm class="App-searchform"/>
           </header>
           <div className="container">
           <MainMap/>
