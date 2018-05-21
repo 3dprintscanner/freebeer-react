@@ -14,7 +14,7 @@ const MapWithAMarkerClusterer = compose(
   withProps({
     googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `600px` }} />,
+    containerElement: <div style={{ height: `300px` }} />,
     mapElement: <div style={{ height: `100%` }} />,
   }),
   withHandlers({
@@ -31,8 +31,8 @@ const MapWithAMarkerClusterer = compose(
   withGoogleMap
 )(props =>
   <GoogleMap
-    defaultZoom={3}
-    defaultCenter={{ lat: 25.0391667, lng: 121.525 }}
+    defaultZoom={12}
+    defaultCenter={{ lat: 51.515, lng: -0.1 }}
   >
     <MarkerClusterer
       onClick={props.onMarkerClustererClick}
@@ -53,27 +53,31 @@ const MapWithAMarkerClusterer = compose(
 
 class MainMap extends React.PureComponent {
   componentWillMount() {
+    this.setState({eventData: []})
     this.setState({ markers: [] })
   }
 
   componentDidMount() {
-    const url = [
-      // Length issue
-      `https://gist.githubusercontent.com`,
-      `/farrrr/dfda7dd7fccfec5474d3`,
-      `/raw/758852bbc1979f6c4522ab4e92d1c92cba8fb0dc/data.json`
-    ].join("")
+    // const url = [
+    //   // Length issue
+    //   `https://gist.githubusercontent.com`,
+    //   `/farrrr/dfda7dd7fccfec5474d3`,
+    //   `/raw/758852bbc1979f6c4522ab4e92d1c92cba8fb0dc/data.json`
+    // ].join("")
 
-    fetch(url)
-      .then(res => res.json())
-      .then(data => {
-        this.setState({ markers: data.photos });
-      });
+    // fetch(url)
+    //   .then(res => res.json())
+    //   .then(data => {
+    //     this.setState({ markers: data.photos });
+    //   });
+    // console.log(eventData);
+    // this.setState({eventData: eventData})
+    // console.log(this.state);
   }
 
   render() {
     return (
-      <MapWithAMarkerClusterer markers={this.state.markers} />
+      <MapWithAMarkerClusterer markers={this.props.markers} />
     )
   }
 }
