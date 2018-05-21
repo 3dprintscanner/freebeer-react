@@ -10,11 +10,17 @@ const {
 } = require("react-google-maps");
 const { MarkerClusterer } = require("react-google-maps/lib/components/addons/MarkerClusterer");
 
+
+const mapContainerStyles = {
+  "height": "300px",
+  "padding-bottom": "10px"
+}
+
 const MapWithAMarkerClusterer = compose(
   withProps({
     googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `300px` }} />,
+    containerElement: <div style={mapContainerStyles} />,
     mapElement: <div style={{ height: `100%` }} />,
   }),
   withHandlers({
@@ -44,7 +50,7 @@ const MapWithAMarkerClusterer = compose(
         <Marker
           key={marker.photo_id}
           position={{ lat: marker.latitude, lng: marker.longitude }}
-          onClick={props.onMarkerClick}
+          onClick={props.onMarkerClick.bind(null, marker)}
         />
       ))}
     </MarkerClusterer>
