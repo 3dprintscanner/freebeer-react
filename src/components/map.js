@@ -21,7 +21,7 @@ const MapWithAMarkerClusterer = compose(
     googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={mapContainerStyles} />,
-    mapElement: <div style={{ height: `100%` }} />,
+    mapElement: <div style={{ height: `100%` }} />
   }),
   withHandlers({
     onMarkerClustererClick: () => (markerClusterer) => {
@@ -29,8 +29,11 @@ const MapWithAMarkerClusterer = compose(
       console.log(`Current clicked markers length: ${clickedMarkers.length}`)
       console.log(clickedMarkers)
     },
-    onMarkerClick: () => (marker) => {
+    onMarkerClick: (props) => (marker) => {
       console.log(marker);
+      if(typeof(props.handleMarkerClick) == 'function'){
+        props.handleMarkerClick(marker);
+      }
     }
   }),
   withScriptjs,
@@ -39,6 +42,7 @@ const MapWithAMarkerClusterer = compose(
   <GoogleMap
     defaultZoom={12}
     defaultCenter={{ lat: 51.515, lng: -0.1 }}
+    center={props.center != null ? props.center : { lat: 51.515, lng: -0.1 } }
   >
     <MarkerClusterer
       onClick={props.onMarkerClustererClick}
@@ -64,26 +68,27 @@ class MainMap extends React.PureComponent {
   }
 
   componentDidMount() {
-    // const url = [
-    //   // Length issue
-    //   `https://gist.githubusercontent.com`,
-    //   `/farrrr/dfda7dd7fccfec5474d3`,
-    //   `/raw/758852bbc1979f6c4522ab4e92d1c92cba8fb0dc/data.json`
-    // ].join("")
-
-    // fetch(url)
-    //   .then(res => res.json())
-    //   .then(data => {
-    //     this.setState({ markers: data.photos });
-    //   });
-    // console.log(eventData);
-    // this.setState({eventData: eventData})
-    // console.log(this.state);
-  }
+    console.log('Map Component DID MOUNT!')
+ }
+ componentWillReceiveProps(newProps) {    
+    console.log('map Component WILL RECIEVE PROPS!')
+ }
+ shouldComponentUpdate(newProps, newState) {
+    return true;
+ }
+ componentWillUpdate(nextProps, nextState) {
+    console.log('map Component WILL UPDATE!');
+ }
+ componentDidUpdate(prevProps, prevState) {
+    console.log('map Component DID UPDATE!')
+ }
+ componentWillUnmount() {
+    console.log('map Component WILL UNMOUNT!')
+ }
 
   render() {
     return (
-      <MapWithAMarkerClusterer markers={this.props.markers} />
+      <MapWithAMarkerClusterer markers={this.props.markers} center={this.props.center} handleMarkerClick={this.props.handleMarkerClick}  />
     )
   }
 }
