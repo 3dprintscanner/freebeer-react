@@ -75,6 +75,13 @@
 		.navbar-nav li a:hover {
 			color: #1abc9c !important;
 		}
+
+		.pricing-plan {
+			padding-bottom: 1em;
+			margin: 2.5em;
+			border-radius: 0.2em;
+			padding: 1em;
+		}
 	</style>
 </head>
 
@@ -156,18 +163,149 @@
 			<p>£10 back for each friend you refer</p>
 			<p>1 month free then £9.99 per month thereafter</p>
 			<br />
-			<button
-				style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-				id="checkout-button-plan_FXWd5cVZlTrHq2" role="link">
-				<span class="glyphicon glyphicon-glass"></span> Premium Listings
-			</button>
 			<div id="error-message"></div>
 		</section>
 	</div>
 
+	<div class="container-fluid bg-1 text-center">
+
+		<h3 class="margin">Pricing Plans</h1>
+
+			<div class="row pricing-plans mt-4 mt-md-5">
+				<div class="col-lg-4 pricing-plan-wrap my-3 my-xl-4">
+					<div class="pricing-plan bg-white text-center mx-auto bg-2">
+						<div class="pricing-header p-4">
+							<h4>Half pint</h4>
+							<p class="text-muted mb-0">Have a taste</p>
+						</div>
+						<div class="pricing-amount bg-light-primary p-4">
+							<div class="pricing-text"><span>£2.99</span></div>
+							<div class="pricing-hover"></div>
+						</div>
+						<div class="pricing-features p-4">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<p>14 days access</p>
+								</li>
+								<li>
+									<p>Full events listing</p>
+								</li>
+								<li>
+									<p>Access calendar from mobile</p>
+								</li>
+							</ul>
+							<button
+								style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+								id="checkout-button-plan_FXXr2ywQ4bIRmp" role="link">
+								<span class="glyphicon glyphicon-glass"></span>
+								Checkout
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 pricing-plan-wrap my-3 my-xl-4">
+					<div class="pricing-plan bg-white text-center mx-auto bg-2">
+						<div class="pricing-header p-4">
+							<h4>Cabernet Sauvignon</h4>
+							<p class="text-muted mb-0">For regulars</p>
+						</div>
+						<div class="pricing-amount bg-light-primary p-4">
+							<div class="pricing-text"><span>£9.99</span>/ Month</div>
+							<div class="pricing-hover"></div>
+						</div>
+						<div class="pricing-features p-4">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<p>6 Months Access</p>
+								</li>
+								<li>
+									<p>Full Access to Calendar</p>
+								</li>
+								<li>
+									<p>Mobile and Desktop</p>
+								</li>
+								<li>
+									<p>Sync with Gmail / Outlook</p>
+								</li>
+								<li>
+									<p>Private Chat channel</p>
+								</li>
+								<li>
+									<p>Unlimited Signups</p>
+								</li>
+							</ul>
+
+							<button
+								style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+								id="checkout-button-plan_FXWd5cVZlTrHq2" role="link">
+								<span class="glyphicon glyphicon-glass"></span>
+								<span class="glyphicon glyphicon-glass"></span>
+								 Checkout
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 pricing-plan-wrap my-3 my-xl-4">
+					<div class="pricing-plan bg-white text-center mx-auto bg-2">
+						<div class="pricing-header p-4">
+							<h4>Dom Perignon</h4>
+							<p class="text-muted mb-0">Go big or go home</p>
+						</div>
+						<div class="pricing-amount bg-light-primary p-4">
+							<div class="pricing-text"><span>£74.99</span>/ Year</div>
+							<div class="pricing-hover"></div>
+						</div>
+						<div class="pricing-features p-4">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<p>12 Months Access</p>
+								</li>
+								<li>
+									<p>Full Access to Calendar</p>
+								</li>
+								<li>
+									<p>Mobile and Desktop</p>
+								</li>
+								<li>
+									<p>Sync with Gmail / Outlook</p>
+								</li>
+								<li>
+									<p>Private Chat channel</p>
+								</li>
+								<li>
+									<p>Unlimited Signups</p>
+								</li>
+								<li>
+									<p>Exclusive Early Releases</p>
+								</li>
+								<li>
+									<p>Feedback and Shape Development</p>
+								</li>
+								<li>
+									<p>Premium members only secret events</p>
+								</li>
+							</ul>
+
+							<button
+								style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+								id="checkout-button-plan_FXXp2JBF6urWdM" role="link">
+								<span class="glyphicon glyphicon-glass"></span>
+								<span class="glyphicon glyphicon-glass"></span>
+								<span class="glyphicon glyphicon-glass"></span>
+								Checkout
+							</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+	</div>
+
+
 	<!-- Footer -->
 	<footer class="container-fluid bg-4 text-center">
-		<p>Copyright © 2019 <a href="http://onlythebestevents.com">onlythebestevents.com</a> All rights reserved.</p>
+		<p>Copyright © 2019 <a href="https://onlythebestevents.com">onlythebestevents.com</a> All rights reserved.</p>
 	</footer>
 	<!-- Load Stripe.js on your website. -->
 	<script src="https://js.stripe.com/v3"></script>
@@ -178,12 +316,61 @@
 	<script>
 		var stripe = Stripe('pk_live_18dIRLqlOm3TC6V6TjTXK6av00WFYgO9ou');
 
-		var checkoutButton = document.getElementById('checkout-button-plan_FXWd5cVZlTrHq2');
-		checkoutButton.addEventListener('click', function () {
+		var checkoutButtonMonthly = document.getElementById('checkout-button-plan_FXWd5cVZlTrHq2');
+		checkoutButtonMonthly.addEventListener('click', function () {
 			// When the customer clicks on the button, redirect
 			// them to Checkout.
 			stripe.redirectToCheckout({
 				items: [{ plan: 'plan_FXWd5cVZlTrHq2', quantity: 1 }],
+
+				// Do not rely on the redirect to the successUrl for fulfilling
+				// purchases, customers may not always reach the success_url after
+				// a successful payment.
+				// Instead use one of the strategies described in
+				// https://stripe.com/docs/payments/checkout/fulfillment
+				successUrl: 'https://onlythebestevents.com/success',
+				cancelUrl: 'https://onlythebestevents.com/canceled',
+			})
+				.then(function (result) {
+					if (result.error) {
+						// If `redirectToCheckout` fails due to a browser or network
+						// error, display the localized error message to your customer.
+						var displayError = document.getElementById('error-message');
+						displayError.textContent = result.error.message;
+					}
+				});
+		});
+
+		var checkoutButtonYearly = document.getElementById('checkout-button-plan_FXXp2JBF6urWdM');
+		checkoutButtonYearly.addEventListener('click', function () {
+			// When the customer clicks on the button, redirect
+			// them to Checkout.
+			stripe.redirectToCheckout({
+				items: [{ plan: 'plan_FXXp2JBF6urWdM', quantity: 1 }],
+
+				// Do not rely on the redirect to the successUrl for fulfilling
+				// purchases, customers may not always reach the success_url after
+				// a successful payment.
+				// Instead use one of the strategies described in
+				// https://stripe.com/docs/payments/checkout/fulfillment
+				successUrl: 'http://onlythebestevents.com/success',
+				cancelUrl: 'http://onlythebestevents.com/canceled',
+			})
+				.then(function (result) {
+					if (result.error) {
+						// If `redirectToCheckout` fails due to a browser or network
+						// error, display the localized error message to your customer.
+						var displayError = document.getElementById('error-message');
+						displayError.textContent = result.error.message;
+					}
+				});
+		});
+		var checkoutButtonWeekly = document.getElementById('checkout-button-plan_FXXr2ywQ4bIRmp');
+		checkoutButtonWeekly.addEventListener('click', function () {
+			// When the customer clicks on the button, redirect
+			// them to Checkout.
+			stripe.redirectToCheckout({
+				items: [{ plan: 'plan_FXXr2ywQ4bIRmp', quantity: 1 }],
 
 				// Do not rely on the redirect to the successUrl for fulfilling
 				// purchases, customers may not always reach the success_url after
