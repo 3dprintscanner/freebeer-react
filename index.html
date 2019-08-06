@@ -102,7 +102,6 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#what">WHAT</a></li>
 					<li><a href="#why">WHY</a></li>
-					<li><a href="#premium">PREMIUM</a></li>
 					<li><a href="http://eepurl.com/gzeah1"><strong>SUBSCRIBE</strong></a></li>
 				</ul>
 			</div>
@@ -111,12 +110,16 @@
 
 	<!-- First Container -->
 	<div class="container-fluid bg-1 text-center">
-		<br />
-		<h1 class="margin">Only The Best Events</h3>
+		<div class="row">
+			<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+				<h1 class="margin">Only The Best Events</h3>
 			<h3 class="margin">The best free events near you in London</h3>
-			<iframe
-				src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FLondon&amp;src=ajBzY3A4cXRoZnE4NHAxYXVna2puZjExZDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23A79B8E&amp;showCalendars=0&amp;showNav=1&amp;showTabs=0&amp;mode=AGENDA"
-				style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+			<div data-tockify-component="calendar" data-tockify-calendar="thebestevents"></div>
+
+			</div>
+		</div>
+		<br />
+		
 	</div>
 
 	<!-- Second Container -->
@@ -155,242 +158,13 @@
 			</div>
 		</section>
 	</div>
-
-	<div class="container-fluid bg-2 text-center">
-		<section id="premium">
-			<h3 class="margin">Want more?</h3>
-			<p>Premium listings, get ALL the best events</p>
-			<p>Early release, secret opportunities and insiders group</p>
-			<p>£10 back for each friend you refer</p>
-			<p>1 month free then £9.99 per month thereafter</p>
-			<br />
-			<div id="error-message"></div>
-		</section>
-	</div>
-
-	<div class="container-fluid bg-1 text-center">
-
-		<h3 class="margin">Pricing Plans</h1>
-
-			<div class="row pricing-plans mt-4 mt-md-5">
-				<div class="col-lg-4 pricing-plan-wrap my-3 my-xl-4">
-					<div class="pricing-plan bg-white text-center mx-auto bg-2">
-						<div class="pricing-header p-4">
-							<h4>Half pint</h4>
-							<p class="text-muted mb-0">Have a taste</p>
-						</div>
-						<div class="pricing-amount bg-light-primary p-4">
-							<div class="pricing-text"><span>£2.99</span></div>
-							<div class="pricing-hover"></div>
-						</div>
-						<div class="pricing-features p-4">
-							<ul class="list-unstyled mb-0">
-								<li>
-									<p>14 days access</p>
-								</li>
-								<li>
-									<p>Full events listing</p>
-								</li>
-								<li>
-									<p>Access calendar from mobile</p>
-								</li>
-							</ul>
-							<button
-								style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-								id="checkout-button-plan_FXXr2ywQ4bIRmp" role="link">
-								<span class="glyphicon glyphicon-glass"></span>
-								Checkout
-							</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 pricing-plan-wrap my-3 my-xl-4">
-					<div class="pricing-plan bg-white text-center mx-auto bg-2">
-						<div class="pricing-header p-4">
-							<h4>Cabernet Sauvignon</h4>
-							<p class="text-muted mb-0">For regulars</p>
-						</div>
-						<div class="pricing-amount bg-light-primary p-4">
-							<div class="pricing-text"><span>£9.99</span>/ Month</div>
-							<div class="pricing-hover"></div>
-						</div>
-						<div class="pricing-features p-4">
-							<ul class="list-unstyled mb-0">
-								<li>
-									<p>6 Months Access</p>
-								</li>
-								<li>
-									<p>Full Access to Calendar</p>
-								</li>
-								<li>
-									<p>Mobile and Desktop</p>
-								</li>
-								<li>
-									<p>Sync with Gmail / Outlook</p>
-								</li>
-								<li>
-									<p>Private Chat channel</p>
-								</li>
-								<li>
-									<p>Unlimited Signups</p>
-								</li>
-							</ul>
-
-							<button
-								style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-								id="checkout-button-plan_FXWd5cVZlTrHq2" role="link">
-								<span class="glyphicon glyphicon-glass"></span>
-								<span class="glyphicon glyphicon-glass"></span>
-								 Checkout
-							</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 pricing-plan-wrap my-3 my-xl-4">
-					<div class="pricing-plan bg-white text-center mx-auto bg-2">
-						<div class="pricing-header p-4">
-							<h4>Dom Perignon</h4>
-							<p class="text-muted mb-0">Go big or go home</p>
-						</div>
-						<div class="pricing-amount bg-light-primary p-4">
-							<div class="pricing-text"><span>£74.99</span>/ Year</div>
-							<div class="pricing-hover"></div>
-						</div>
-						<div class="pricing-features p-4">
-							<ul class="list-unstyled mb-0">
-								<li>
-									<p>12 Months Access</p>
-								</li>
-								<li>
-									<p>Full Access to Calendar</p>
-								</li>
-								<li>
-									<p>Mobile and Desktop</p>
-								</li>
-								<li>
-									<p>Sync with Gmail / Outlook</p>
-								</li>
-								<li>
-									<p>Private Chat channel</p>
-								</li>
-								<li>
-									<p>Unlimited Signups</p>
-								</li>
-								<li>
-									<p>Exclusive Early Releases</p>
-								</li>
-								<li>
-									<p>Feedback and Shape Development</p>
-								</li>
-								<li>
-									<p>Premium members only secret events</p>
-								</li>
-							</ul>
-
-							<button
-								style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-								id="checkout-button-plan_FXXp2JBF6urWdM" role="link">
-								<span class="glyphicon glyphicon-glass"></span>
-								<span class="glyphicon glyphicon-glass"></span>
-								<span class="glyphicon glyphicon-glass"></span>
-								Checkout
-							</button>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-	</div>
-
-
 	<!-- Footer -->
 	<footer class="container-fluid bg-4 text-center">
 		<p>Copyright © 2019 <a href="https://onlythebestevents.com">onlythebestevents.com</a> All rights reserved.</p>
 	</footer>
 	<!-- Load Stripe.js on your website. -->
-	<script src="https://js.stripe.com/v3"></script>
 
-	<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-
-
-	<script>
-		var stripe = Stripe('pk_live_18dIRLqlOm3TC6V6TjTXK6av00WFYgO9ou');
-
-		var checkoutButtonMonthly = document.getElementById('checkout-button-plan_FXWd5cVZlTrHq2');
-		checkoutButtonMonthly.addEventListener('click', function () {
-			// When the customer clicks on the button, redirect
-			// them to Checkout.
-			stripe.redirectToCheckout({
-				items: [{ plan: 'plan_FXWd5cVZlTrHq2', quantity: 1 }],
-
-				// Do not rely on the redirect to the successUrl for fulfilling
-				// purchases, customers may not always reach the success_url after
-				// a successful payment.
-				// Instead use one of the strategies described in
-				// https://stripe.com/docs/payments/checkout/fulfillment
-				successUrl: 'https://onlythebestevents.com/success',
-				cancelUrl: 'https://onlythebestevents.com/canceled',
-			})
-				.then(function (result) {
-					if (result.error) {
-						// If `redirectToCheckout` fails due to a browser or network
-						// error, display the localized error message to your customer.
-						var displayError = document.getElementById('error-message');
-						displayError.textContent = result.error.message;
-					}
-				});
-		});
-
-		var checkoutButtonYearly = document.getElementById('checkout-button-plan_FXXp2JBF6urWdM');
-		checkoutButtonYearly.addEventListener('click', function () {
-			// When the customer clicks on the button, redirect
-			// them to Checkout.
-			stripe.redirectToCheckout({
-				items: [{ plan: 'plan_FXXp2JBF6urWdM', quantity: 1 }],
-
-				// Do not rely on the redirect to the successUrl for fulfilling
-				// purchases, customers may not always reach the success_url after
-				// a successful payment.
-				// Instead use one of the strategies described in
-				// https://stripe.com/docs/payments/checkout/fulfillment
-				successUrl: 'http://onlythebestevents.com/success',
-				cancelUrl: 'http://onlythebestevents.com/canceled',
-			})
-				.then(function (result) {
-					if (result.error) {
-						// If `redirectToCheckout` fails due to a browser or network
-						// error, display the localized error message to your customer.
-						var displayError = document.getElementById('error-message');
-						displayError.textContent = result.error.message;
-					}
-				});
-		});
-		var checkoutButtonWeekly = document.getElementById('checkout-button-plan_FXXr2ywQ4bIRmp');
-		checkoutButtonWeekly.addEventListener('click', function () {
-			// When the customer clicks on the button, redirect
-			// them to Checkout.
-			stripe.redirectToCheckout({
-				items: [{ plan: 'plan_FXXr2ywQ4bIRmp', quantity: 1 }],
-
-				// Do not rely on the redirect to the successUrl for fulfilling
-				// purchases, customers may not always reach the success_url after
-				// a successful payment.
-				// Instead use one of the strategies described in
-				// https://stripe.com/docs/payments/checkout/fulfillment
-				successUrl: 'http://onlythebestevents.com/success',
-				cancelUrl: 'http://onlythebestevents.com/canceled',
-			})
-				.then(function (result) {
-					if (result.error) {
-						// If `redirectToCheckout` fails due to a browser or network
-						// error, display the localized error message to your customer.
-						var displayError = document.getElementById('error-message');
-						displayError.textContent = result.error.message;
-					}
-				});
-		});
-	</script>
+	<script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>		
 	<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"391f2b4e3c2abb404c05798bd","lid":"3ac52023cb","uniqueMethods":true}) })</script>
 	</body>
 
